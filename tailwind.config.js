@@ -16,9 +16,10 @@ export default {
         sage: '#2F5D3A',
       },
       fontFamily: {
-        serif: ['"Source Serif 4"', 'Georgia', 'serif'],
-        display: ['"Playfair Display"', 'Georgia', 'serif'],
-        mono: ['"DM Mono"', 'monospace'],
+        serif: ['"Source Serif 4"', '"Noto Serif SC"', '"Songti SC"', 'Georgia', 'serif'],
+        display: ['"Playfair Display"', '"Noto Serif SC"', '"Songti SC"', 'Georgia', 'serif'],
+        sans: ['Inter', '"Noto Sans SC"', '"PingFang SC"', 'Arial', 'sans-serif'],
+        mono: ['"DM Mono"', 'Inter', '"Noto Sans SC"', '"PingFang SC"', 'monospace'],
       },
       boxShadow: {
         soft: '0 18px 60px rgba(26, 23, 20, 0.10)',

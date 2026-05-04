@@ -11,7 +11,7 @@ function LeadershipCard({ card, lang }) {
 }
 
 export default function TeamPage({ lang }) {
-  const { hero, leadership, team, organization } = siteContent.teamPage;
+  const { hero, leadership, team } = siteContent.teamPage;
 
   return (
     <div className="bg-cream">
@@ -86,30 +86,12 @@ export default function TeamPage({ lang }) {
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {team.members.map((member) => (
-              <TeamMemberCard key={member.name} member={member} lang={lang} />
+              <TeamMemberCard key={t(member.name, 'en')} member={member} lang={lang} />
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-t border-border bg-paper">
-        <div className="section-shell">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow">{t(organization.eyebrow, lang)}</p>
-            <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
-              {t(organization.title, lang)}
-            </h2>
-          </div>
-
-          <div className="mx-auto mt-10 max-w-5xl overflow-x-auto rounded-[10px] border border-border bg-white p-4 sm:p-6">
-            <img
-              src={organization.image.src}
-              alt={t(organization.image.alt, lang)}
-              className="mx-auto h-auto min-w-[720px] max-w-full object-contain sm:min-w-0"
-            />
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

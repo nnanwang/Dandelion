@@ -5,7 +5,6 @@ import Footer from './components/layout/Footer';
 import HomeHero from './components/sections/HomeHero';
 import ProjectSnapshot from './components/sections/ProjectSnapshot';
 import AboutSection from './components/sections/AboutSection';
-import VisualIdentitySection from './components/sections/VisualIdentitySection';
 import ObservedSection from './components/sections/ObservedSection';
 import TimelineSection from './components/sections/TimelineSection';
 import VolunteerSection from './components/sections/VolunteerSection';
@@ -35,7 +34,6 @@ function HomePage({ lang }) {
       <HomeHero lang={lang} />
       <ProjectSnapshot lang={lang} />
       <AboutSection lang={lang} />
-      <VisualIdentitySection lang={lang} />
       <ObservedSection lang={lang} />
       <TimelineSection lang={lang} />
       <VolunteerSection lang={lang} />

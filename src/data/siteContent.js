@@ -155,6 +155,10 @@ export const siteContent = {
         en: 'A behavioral model that explains how preventive health choices are made.',
         zh: '一个解释预防性健康选择如何形成的行为模型。',
       },
+      keyStatement: {
+        en: 'Prevention becomes possible when belief, urgency, and practicality align.',
+        zh: '当信念、紧迫感与可行性对齐时，预防才成为可能。',
+      },
       inputsLabel: { en: 'Inputs', zh: '输入因素' },
       inputs: [
         {
@@ -530,21 +534,6 @@ export const siteContent = {
       },
     ],
   },
-  visualIdentity: {
-    eyebrow: { en: 'Visual Identity', zh: '视觉识别' },
-    title: { en: 'Brand Design by Bai Mochen', zh: '品牌设计 · 白默宸' },
-    subtitle: {
-      en: 'Complete visual identity system — LOGO, posters, promotional materials, and digital assets.',
-      zh: '蒲公英计划完整视觉识别体系——包括LOGO、海报、宣传物料与数字资产。',
-    },
-    image: {
-      src: '/images/Image_20260422070242_62_1218.jpg',
-      alt: {
-        en: 'Dandelion Project visual identity system by Bai Mochen',
-        zh: '白默宸设计的蒲公英计划视觉识别体系',
-      },
-    },
-  },
   projectSnapshot: [
     {
       value: '2025–27',
@@ -635,44 +624,6 @@ export const siteContent = {
       complete: false,
     },
   ],
-  team: {
-    eyebrow: { en: 'Team', zh: '团队' },
-    title: { en: 'Student-led, community-centered', zh: '学生发起，社区为中心' },
-    members: [
-      {
-        name: 'Chuxuan (Kaylee) Zhang',
-        role: { en: 'Founder · Research Lead', zh: '发起人 · 研究负责人' },
-        bio: {
-          en: 'Leads research design, field coordination, public health education, and program strategy.',
-          zh: '负责研究设计、田野协调、公共卫生宣教与项目策略。',
-        },
-      },
-      {
-        name: 'Isabel / Arthur',
-        role: { en: 'Content & Copywriting', zh: '文案与内容' },
-        bio: {
-          en: 'Supports science communication materials, WeChat articles, and website content.',
-          zh: '支持科普材料、公众号推文与网站内容撰写。',
-        },
-      },
-      {
-        name: 'Arthur / Evan',
-        role: { en: 'Documentary & Video', zh: '纪录片与视频' },
-        bio: {
-          en: 'Supports documentary coordination, on-site filming, interviews, and post-production.',
-          zh: '支持纪录片统筹、现场拍摄、采访与后期制作。',
-        },
-      },
-      {
-        name: 'External Relations',
-        role: { en: 'Community & Hospital Liaison · Recruiting', zh: '社区与医院联络 · 招募中' },
-        bio: {
-          en: 'Coordinates with township hospitals, village clinics, and local health authorities.',
-          zh: '联络乡镇卫生院、村卫生室与当地卫生主管部门。',
-        },
-      },
-    ],
-  },
   teamPage: {
     hero: {
       eyebrow: { en: 'Team Page', zh: '团队页面' },
@@ -760,90 +711,125 @@ export const siteContent = {
       },
       members: [
         {
-          name: 'Kaylee Zhang 张楚萱',
-          badge: { en: 'Lead', zh: '负责人' },
+          name: { en: 'Kaylee Zhang', zh: '张楚萱' },
+          initials: { en: 'KZ', zh: '张' },
+          status: { en: 'Lead', zh: '负责人' },
           role: { en: 'Project Lead & Founder', zh: '项目负责人 · 发起人' },
-          about: {
+          bio: {
             en: "Year 12, Queenwood School for Girls, Sydney. Responsible for the project's concept, field design, research methodology, fundraising, and long-term institutional development.",
             zh: '昆伍德女子学校12年级，悉尼。负责项目概念、田野设计、研究方法论、筹款与长期机构化发展。',
           },
-          responsibilities: [
-            { en: 'Project concept & framework design', zh: '项目概念与框架设计' },
-            { en: 'Overall program direction & coordination', zh: '项目整体方向与协调' },
-          ],
+          bullets: {
+            en: ['Project concept & framework design', 'Overall program direction & coordination'],
+            zh: ['项目概念与框架设计', '项目整体方向与协调'],
+          },
         },
         {
-          name: '赵子瑜',
+          name: { en: 'Zhao Ziyu', zh: '赵子瑜' },
+          initials: { en: 'ZZ', zh: '赵' },
           role: { en: 'Digital Operations Lead', zh: '数字运营负责人' },
-          about: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
-          responsibilities: [
-            { en: 'WeChat Official Account: application & registration', zh: '公众号申请与注册' },
-            { en: 'WeChat Official Account: daily operations & management', zh: '公众号日常运营与管理' },
-            { en: 'Project website: development & setup', zh: '官网开发与搭建' },
-            { en: 'Project website: maintenance & content updates', zh: '官网日常维护与内容更新' },
-            { en: 'Website fundraising module: integration & management', zh: '官网筹款板块对接与管理' },
-          ],
+          bio: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
+          bullets: {
+            en: [
+              'WeChat Official Account: application & registration',
+              'WeChat Official Account: daily operations & management',
+              'Project website: development & setup',
+              'Project website: maintenance & content updates',
+              'Website fundraising module: integration & management',
+            ],
+            zh: [
+              '公众号申请与注册',
+              '公众号日常运营与管理',
+              '官网开发与搭建',
+              '官网日常维护与内容更新',
+              '官网筹款板块对接与管理',
+            ],
+          },
         },
         {
-          name: '白默宸',
+          name: { en: 'Bai Mochen', zh: '白默宸' },
+          initials: { en: 'BM', zh: '白' },
           role: { en: 'Visual Design & Care Package Lead', zh: '视觉设计 · 关爱包负责人' },
-          about: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
-          responsibilities: [
-            { en: 'Project LOGO design', zh: '项目LOGO设计' },
-            { en: 'Poster & promotional materials design', zh: '海报与宣传物料设计' },
-            { en: 'Care package: materials list confirmation', zh: '关爱包物料清单确定' },
-            { en: 'Care package: fundraising', zh: '关爱包费用募集' },
-            { en: 'Care package: procurement & assembly', zh: '关爱包采购与整理' },
-          ],
+          bio: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
+          bullets: {
+            en: [
+              'Project LOGO design',
+              'Poster & promotional materials design',
+              'Care package: materials list confirmation',
+              'Care package: fundraising',
+              'Care package: procurement & assembly',
+            ],
+            zh: [
+              '项目LOGO设计',
+              '海报与宣传物料设计',
+              '关爱包物料清单确定',
+              '关爱包费用募集',
+              '关爱包采购与整理',
+            ],
+          },
         },
         {
-          name: 'Isabel 马凯雯 / Arthur',
+          name: { en: 'Isabel / Arthur', zh: '马凯雯 / Arthur' },
+          initials: { en: 'IA', zh: '马' },
           role: { en: 'Content & Copywriting', zh: '文案与内容' },
-          about: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
-          responsibilities: [
-            { en: 'Promotional materials & science communication copy', zh: '宣传资料、科普文案撰写' },
-            { en: 'WeChat article writing', zh: '公众号推文撰写' },
-            { en: 'Website content writing', zh: '官网内容撰写' },
-            { en: 'Content layout: WeChat + website', zh: '内容排版（公众号 + 官网）' },
-          ],
+          bio: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
+          bullets: {
+            en: [
+              'Promotional materials & science communication copy',
+              'WeChat article writing',
+              'Website content writing',
+              'Content layout: WeChat + website',
+            ],
+            zh: [
+              '宣传资料、科普文案撰写',
+              '公众号推文撰写',
+              '官网内容撰写',
+              '内容排版（公众号 + 官网）',
+            ],
+          },
         },
         {
-          name: 'Arthur / Evan',
+          name: { en: 'Arthur / Evan', zh: 'Arthur / Evan' },
+          initials: { en: 'AE', zh: 'A/E' },
           role: { en: 'Documentary & Video Production', zh: '纪录片拍摄' },
-          about: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
-          responsibilities: [
-            { en: 'Documentary: overall coordination', zh: '纪录片整体统筹' },
-            { en: 'On-site filming & interviews', zh: '现场拍摄与采访' },
-            { en: 'Video editing & post-production', zh: '视频剪辑与后期制作' },
-          ],
+          bio: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
+          bullets: {
+            en: [
+              'Documentary: overall coordination',
+              'On-site filming & interviews',
+              'Video editing & post-production',
+            ],
+            zh: [
+              '纪录片整体统筹',
+              '现场拍摄与采访',
+              '视频剪辑与后期制作',
+            ],
+          },
         },
         {
-          name: 'External Relations (Open)',
-          badge: { en: 'Recruiting', zh: '招募中' },
+          name: { en: 'External Relations (Open)', zh: '外联对接（招募中）' },
+          initials: { en: 'ER', zh: '外' },
+          status: { en: 'Recruiting', zh: '招募中' },
           role: { en: 'Community & Hospital Liaison', zh: '社区与医院联络' },
-          about: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
-          responsibilities: [
-            { en: 'Outreach to township hospitals & village clinics', zh: '联络北京山区村镇卫生院与村卫生室' },
-            { en: 'Coordination with local health authorities', zh: '与当地卫生主管部门协调' },
-            { en: 'Site preparation for 2027 expansion', zh: '为2027年扩展做场地准备' },
-          ],
+          bio: { en: 'Personal introduction coming soon.', zh: '个人介绍待更新。' },
+          bullets: {
+            en: [
+              'Outreach to township hospitals & village clinics',
+              'Coordination with local health authorities',
+              'Site preparation for 2027 expansion',
+            ],
+            zh: [
+              '联络北京山区村镇卫生院与村卫生室',
+              '与当地卫生主管部门协调',
+              '为2027年扩展做场地准备',
+            ],
+          },
           cta: {
-            label: { en: 'Apply for this role ->', zh: '申请加入 ->' },
+            label: { en: 'Apply for this role', zh: '申请该岗位' },
             href: 'mailto:volunteer@dandelionproject.org',
           },
         },
       ],
-    },
-    organization: {
-      eyebrow: { en: 'Organization', zh: '组织结构' },
-      title: { en: 'Project Organization', zh: '项目组织结构' },
-      image: {
-        src: '/images/Image_20260422070228_52_1218.jpg',
-        alt: {
-          en: 'Dandelion Project team and organization diagram',
-          zh: '蒲公英计划团队与组织结构图',
-        },
-      },
     },
   },
   donation: {
